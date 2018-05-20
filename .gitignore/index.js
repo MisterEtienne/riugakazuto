@@ -16,7 +16,7 @@ bot.on('ready', function() {
     console.log("Connected");
 });
 
-bot.login("NDQ3Mzk4NjEwNDQ4MTU0NjI0.DeHOoQ.84OZlHADo9Tv23cT0IQrHX-1bRM");
+bot.login(process.env.TOKEN);
 
  bot.on("guildMemberAdd", member => {
     let role = member.guild.roles.find("name", "Nouveau");
