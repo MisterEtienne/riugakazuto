@@ -19,13 +19,13 @@ bot.on('ready', function() {
 bot.login(process.env.TOKEN);
 
  bot.on("guildMemberAdd", member => {
-    let role = member.guild.roles.find("name", "Nouveau");
+    let role = member.guild.roles.find("name", "👤[Nouveau/elle]👤");
      member.guild.channels.find("name", "général").send(` :smiley:  ${member.user.username} Bienvenue dans le serveur :smiley: `)
     member.addRole(role)
 })
     
 bot.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "général").send(` :slight_frown: ${member.user.username} nous a quitté :slight_frown: RIP`)
+    member.guild.channels.find("name", "💖accueil💗").send(` :slight_frown: ${member.user.username} nous a quitté :slight_frown: RIP`)
 })
 
 bot.on('message', message => {
